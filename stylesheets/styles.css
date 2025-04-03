@@ -211,8 +211,23 @@ footer p {
     font-size: 16px;
 }
 
+/* ----- academix exp ----- */
 
+.academic_exp {
+    display: flex;
+    flex-direction: column;
+}
 
+.academic_exp .page_content {
+    flex: 1 0 auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.academic_exp h1 {
+    margin-top: 0;
+    color: #e7625f;
+}
 
 /*----------------------------- 
         FOOTER 
