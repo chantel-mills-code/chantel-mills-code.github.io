@@ -211,7 +211,7 @@ footer p {
     font-size: 16px;
 }
 
-/* ----- academix exp ----- */
+/* ----- academic exp ----- */
 
 .academic_exp {
     display: flex;
@@ -227,6 +227,16 @@ footer p {
 .academic_exp h1 {
     margin-top: 0;
     color: #e7625f;
+}
+
+.academic_exp .page_content .education_list_item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #e3e3e3 solid 1px;
+}
+
+.education_list_item .education_date {
+    margin-right: 20px;
 }
 
 /*----------------------------- 
