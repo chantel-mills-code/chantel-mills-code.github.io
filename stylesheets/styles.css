@@ -239,6 +239,18 @@ footer p {
     margin-right: 20px;
 }
 
+.linkedin_courses_list {
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: auto auto auto auto; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkedin_courses_list .course_name {
+    width: 40%;
+}
+
 /*----------------------------- 
         FOOTER 
 -----------------------------*/
