@@ -251,6 +251,63 @@ footer p {
     width: 40%;
 }
 
+/* ----- professional_exp ----- */
+
+.professional_exp {
+    display: flex;
+    flex-direction: column;
+}
+
+.professional_exp .page_content {
+    flex: 1 0 auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.professional_exp h1 {
+    margin-top: 0;
+    color: #e7625f;
+}
+
+.experience_outline {
+    border-bottom: #e3e3e3 1px solid;
+}
+
+.professional_exp .page_content .company_list_item {
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: #e3e3e3 solid 1px; */
+}
+
+.work_info {
+    margin-bottom: 20px;
+}
+
+.company_list_item input {
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+.company_list_item input:hover {
+    cursor: pointer;
+}
+
+#thales_work_info.hide, #mybond_work_info.hide {
+    transform: translateX(-100%);
+    visibility: hidden;
+    /* optional */
+    height: 0;
+    padding: 0;
+    margin: 0;
+    /* also optional */
+    opacity: 0;
+}
+
+#thales_work_info, #mybond_work_info {
+    transition: all 1s;
+}
+
 /*----------------------------- 
         FOOTER 
 -----------------------------*/
