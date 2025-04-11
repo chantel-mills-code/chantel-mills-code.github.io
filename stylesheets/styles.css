@@ -68,8 +68,9 @@ footer p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #189AB4;
-    border-bottom: #189AB4 solid 2px;
+    background-color: #022272;
+    border-bottom: #022272 solid 2px;
+    /* #189AB4 */
 }
 
 .header_links {
@@ -148,7 +149,7 @@ footer p {
 
 .skills {
     background-color: white;
-    border-top: #189AB4 solid 2px;
+    border-top: #022272 solid 2px;
     height: 40%;
     padding: 20px 20px;
     text-align: center;
