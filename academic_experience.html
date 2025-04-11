@@ -5,6 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Chantel Mills | Software Engineer</title>
         <link rel="stylesheet" href="stylesheets/styles.css">
+        <script>
+            window.addEventListener('load',function(){
+                document.getElementById('uts_education').classList.toggle('hide') // removes hide
+                document.getElementById('academic_achievements').classList.toggle('hide') // removes hide
+            })
+        </script>
     </head>
     <body class="academic_exp">
         <div class="header">
@@ -29,145 +35,149 @@
         </div>
         <div class="page_content">
             <h1>Academic Experience</h1>
-            <div class="education_list_item">
-                <div>
-                    <p>
-                        <strong>Bachelor of Engineering (Honours), Software Engineering<br>
-                        Diploma of Professional Engineering Practice</strong>
-                    </p>
-                    <p>
-                        University of Technology Sydney
-                    </p>
-                </div>
-                <div class="education_date">
-                    <p>March 2019 - November 2025</p>
+            <div id="uts_education" class="hide">
+                <div class="education_list_item">
+                    <div>
+                        <p>
+                            <strong>Bachelor of Engineering (Honours), Software Engineering<br>
+                            Diploma of Professional Engineering Practice</strong>
+                        </p>
+                        <p>
+                            University of Technology Sydney
+                        </p>
+                    </div>
+                    <div class="education_date">
+                        <p>March 2019 - November 2025</p>
+                    </div>
                 </div>
             </div>
             <h1 style="margin-top: 20px;">Academic Achievements</h1>
-            <div class="education_list_item">
-                <div>
-                    <p>
-                        <strong>Thales Senior Cooperative Scholarship</strong>
-                    </p>
-                    <p>
-                        University of Technology Sydney
-                    </p>
-                </div>
-                <div class="education_date">
-                    <p>2024</p>
-                </div>
-            </div>
-            <div class="education_list_item">
-                <div>
-                    <p>
-                        <strong>Deans List Engineering</strong>
-                    </p>
-                    <p>
-                        University of Technology Sydney<br>
-                        Awarded for outstanding academic achievement
-                    </p>
-                </div>
-                <div class="education_date">
-                    <p>2024</p>
-                </div>
-            </div>
-            <div class="education_list_item">
-                <div>
-                    <p>
-                        <strong>Lucy Mentoring Program</strong>
-                    </p>
-                    <p>
-                        University of Technology Sydney<br>
-                    </p>
-                </div>
-                <div class="education_date">
-                    <p>March 2020 - September 2020</p>
-                </div>
-            </div>
-            <div class="education_list_item" style="border: none;">
-                <div>
-                    <p>
-                        <strong>LinkedIn Learning</strong>
-                    </p>
-                </div>
-                <div class="education_date">
-                    <!-- <p>Ongoing</p> -->
-                </div>
-            </div>
-            <div class="education_list_item">
-                <div class="linkedin_courses_list">
-                    <div class="course_name">
-                        <!-- Course -->
-                        <p>BootStrap 5 essential Training</p>
-                    </div>
+            <div id="academic_achievements" class="hide">
+                <div class="education_list_item">
                     <div>
-                        <!-- Date Complete -->
-                         <p>2021</p>
+                        <p>
+                            <strong>Thales Senior Cooperative Scholarship</strong>
+                        </p>
+                        <p>
+                            University of Technology Sydney
+                        </p>
                     </div>
-
-                    <div class="course_name" style="padding-left: 20px;">
-                        <!-- Course -->
-                        <p>Agile Foundations</p>
+                    <div class="education_date">
+                        <p>2024</p>
                     </div>
-                    <div style="text-align: right; padding-right: 20px;">
-                        <!-- Date Complete -->
-                         <p>2021</p>
-                    </div>
-
-                    <div class="course_name" >
-                        <!-- Course -->
-                        <p>Learning Python</p>
-                    </div>
+                </div>
+                <div class="education_list_item">
                     <div>
-                        <!-- Date Complete -->
-                         <p>2021</p>
+                        <p>
+                            <strong>Deans List Engineering</strong>
+                        </p>
+                        <p>
+                            University of Technology Sydney<br>
+                            Awarded for outstanding academic achievement
+                        </p>
                     </div>
-
-                    <div class="course_name" style="padding-left: 20px;">
-                        <!-- Course -->
-                        <p>Introduction to CSS</p>
+                    <div class="education_date">
+                        <p>2024</p>
                     </div>
-                    <div style="text-align: right; padding-right: 20px;">
-                        <!-- Date Complete -->
-                         <p>2021</p>
-                    </div>
-
-                    <div class="course_name" >
-                        <!-- Course -->
-                        <p>HTML Essential Training</p>
-                    </div>
+                </div>
+                <div class="education_list_item">
                     <div>
-                        <!-- Date Complete -->
-                         <p>2021</p>
+                        <p>
+                            <strong>Lucy Mentoring Program</strong>
+                        </p>
+                        <p>
+                            University of Technology Sydney<br>
+                        </p>
                     </div>
-
-                    <div class="course_name" style="padding-left: 20px;">
-                        <!-- Course -->
-                        <p>Learning SQL Programming</p>
+                    <div class="education_date">
+                        <p>March 2020 - September 2020</p>
                     </div>
-                    <div style="text-align: right; padding-right: 20px;">
-                        <!-- Date Complete -->
-                         <p>2021</p>
-                    </div>
-
-                    <div class="course_name" >
-                        <!-- Course -->
-                        <p>Programming Foundations: Fundamentals</p>
-                    </div>
+                </div>
+                <div class="education_list_item" style="border: none;">
                     <div>
-                        <!-- Date Complete -->
-                         <p>2021</p>
+                        <p>
+                            <strong>LinkedIn Learning</strong>
+                        </p>
                     </div>
+                    <div class="education_date">
+                        <!-- <p>Ongoing</p> -->
+                    </div>
+                </div>
+                <div class="education_list_item">
+                    <div class="linkedin_courses_list">
+                        <div class="course_name">
+                            <!-- Course -->
+                            <p>BootStrap 5 essential Training</p>
+                        </div>
+                        <div>
+                            <!-- Date Complete -->
+                            <p>2021</p>
+                        </div>
 
-                    <div class="course_name" style="padding-left: 20px;">
-                        <!-- Course -->
-                        <p>Intro to Web Design & Development</p>
-                    </div>
-                    <div style="text-align: right; padding-right: 20px;">
-                        <!-- Date Complete -->
-                         <p>2025</p>
-                    </div>
+                        <div class="course_name" style="padding-left: 20px;">
+                            <!-- Course -->
+                            <p>Agile Foundations</p>
+                        </div>
+                        <div style="text-align: right; padding-right: 20px;">
+                            <!-- Date Complete -->
+                            <p>2021</p>
+                        </div>
 
+                        <div class="course_name" >
+                            <!-- Course -->
+                            <p>Learning Python</p>
+                        </div>
+                        <div>
+                            <!-- Date Complete -->
+                            <p>2021</p>
+                        </div>
+
+                        <div class="course_name" style="padding-left: 20px;">
+                            <!-- Course -->
+                            <p>Introduction to CSS</p>
+                        </div>
+                        <div style="text-align: right; padding-right: 20px;">
+                            <!-- Date Complete -->
+                            <p>2021</p>
+                        </div>
+
+                        <div class="course_name" >
+                            <!-- Course -->
+                            <p>HTML Essential Training</p>
+                        </div>
+                        <div>
+                            <!-- Date Complete -->
+                            <p>2021</p>
+                        </div>
+
+                        <div class="course_name" style="padding-left: 20px;">
+                            <!-- Course -->
+                            <p>Learning SQL Programming</p>
+                        </div>
+                        <div style="text-align: right; padding-right: 20px;">
+                            <!-- Date Complete -->
+                            <p>2021</p>
+                        </div>
+
+                        <div class="course_name" >
+                            <!-- Course -->
+                            <p>Programming Foundations: Fundamentals</p>
+                        </div>
+                        <div>
+                            <!-- Date Complete -->
+                            <p>2021</p>
+                        </div>
+
+                        <div class="course_name" style="padding-left: 20px;">
+                            <!-- Course -->
+                            <p>Intro to Web Design & Development</p>
+                        </div>
+                        <div style="text-align: right; padding-right: 20px;">
+                            <!-- Date Complete -->
+                            <p>2025</p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
