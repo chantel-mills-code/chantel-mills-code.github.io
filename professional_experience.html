@@ -5,6 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Chantel Mills | Software Engineer</title>
         <link rel="stylesheet" href="stylesheets/styles.css">
+        <script>
+            window.addEventListener('load',function(){
+                document.getElementById('thales_work_info').classList.toggle('hide') // removes hide
+                document.getElementById('mybond_work_info').classList.toggle('hide') // removes hide
+            })
+        </script>
     </head>
     <body class="professional_exp">
         <div class="header">
@@ -29,11 +35,11 @@
         </div>
         <div class="page_content">
             <h1>Professional Experience</h1>
-            <h5>Click on the company names below for more information.</h5>
+            <!-- <h5>Click on the company names below for more information.</h5> -->
             <div class="experience_outline">
                 <div class="company_list_item">
                     <!-- <div class=""> -->
-                        <input type="button" id="thales_title" value="Thales - Software Engineering Intern" onclick="document.getElementById('thales_work_info').classList.toggle('hide')">
+                        <input type="button" id="thales_title" value="Thales - Software Engineering Intern" style="font-weight: bold;">
                     <!-- </div> -->
                     <div>
                         <p><b>July 2024 - January 2025</b></p>
@@ -42,7 +48,7 @@
                 <div class="work_info hide" id="thales_work_info">
                     <ul>
                         <li>
-                            Collaborated with Senior Software Engineer in the development of a project’s frontend for the UX and UI, utilised draw.io to develop initial wireframes to meet project requirements within an Agile environment
+                            Collaborated with Senior Software Engineer in the development of a project’s frontend for the UX and UI, <br>utilised draw.io to develop initial wireframes to meet project requirements within an Agile environment
                         </li>
                         <li>
                             Undertook unit testing for JavaScript and C++ Applications
@@ -54,7 +60,7 @@
                             Managed and created documentation for unit testing frameworks and recommendations
                         </li>
                         <li>
-                            Conducted research for unit testing frameworks, Test-driven development and code coverage in C++, JavaScript and Python applications
+                            Conducted research for unit testing frameworks, Test-driven development and code coverage in C++, <br>JavaScript and Python applications
                         </li>
                         <li>
                             Delivered Presentations
@@ -68,7 +74,7 @@
             <div class="experience_outline">
                 <div class="company_list_item">
                     <!-- <div class=""> -->
-                        <input type="button" id="mybond_title" value="MyBond - Junior Software Engineer" onclick="document.getElementById('mybond_work_info').classList.toggle('hide')">
+                        <input type="button" id="mybond_title" value="MyBond - Junior Software Engineer" style="font-weight: bold;">
                     <!-- </div> -->
                     <div>
                         <p><b>November 2021 - July 2024</b></p>
@@ -77,10 +83,10 @@
                 <div class="work_info hide" id="mybond_work_info">
                     <ul>
                         <li>
-                            Whilst working within an Agile environment I have been involved in every stage of the Software Development Lifecycle (SDLC)
+                            Whilst working within an Agile environment I have been involved in every stage of the Software Development <br>Lifecycle (SDLC)
                         </li>
                         <li>
-                            Enhanced current reports and automated processes which have increased productivity by 20% within the business
+                            Enhanced current reports and automated processes which have increased productivity by 20% within the <br>business
                         </li>
                         <li>
                             Proficient coding techniques
