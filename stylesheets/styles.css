@@ -331,6 +331,26 @@ footer p {
     transition: all 3s;
 }
 
+/* skills */
+
+/* transferable_skills */
+.transferable_skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.transferable_skills .page_content {
+    flex: 1 0 auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.transferable_skills h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #189AB4;
+}
+
 /*----------------------------- 
         FOOTER 
 -----------------------------*/
