@@ -333,7 +333,6 @@ footer p {
 
 /* skills */
 
-/* transferable_skills */
 .transferable_skills {
     display: flex;
     flex-direction: column;
@@ -349,6 +348,31 @@ footer p {
     margin-top: 0;
     margin-bottom: 0;
     color: #189AB4;
+}
+
+.skill-item {
+    display: flow-root;
+    margin: 30px 0;
+}
+
+.skill-item h3 {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+
+#skill_1_communication.hide, #skill_2_leadership.hide, #skill_3_leadership.hide {
+    transform: translateX(-100%);
+    visibility: hidden;
+    /* optional */
+    /* height: 0; */
+    /* padding: 0; */
+    /* margin: 0; */
+    /* also optional */
+    opacity: 0;
+}
+#skill_1_communication, #skill_2_leadership, #skill_3_leadership {
+    transition: all 4s;
 }
 
 /*----------------------------- 
