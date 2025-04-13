@@ -5,6 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Chantel Mills | Software Engineer</title>
         <link rel="stylesheet" href="stylesheets/styles.css">
+        <script>
+            window.addEventListener('load',function(){
+                // remove all the hide classes on page load
+                document.getElementById('research_capstone').classList.toggle('hide');
+            })
+        </script>
     </head>
     <body class="projects">
         <div class="header">
@@ -59,8 +65,10 @@
             </div>
 
             <h1>Research</h1>
-            <h2>Engineering Capstone Project</h2>
-            <p>The background for the capstone project is to explore the behaviour of consumers whilst interacting with games. It's purpose is to dive deeper into the topic of consumer behaviour in games by exploring the impact of customisation and the effect it has on engagement in video games.</p>
+            <div id="research_capstone" class="hide">
+                <h2>Engineering Capstone Project</h2>
+                <p>The background for the capstone project is to explore the behaviour of consumers whilst interacting with games. It's purpose is to dive deeper into the topic of consumer behaviour in games by exploring the impact of customisation and the effect it has on engagement in video games.</p>
+            </div>
 
         </div>
         <footer>

@@ -316,7 +316,7 @@ footer p {
     cursor: pointer;
 } */
 
-#thales_work_info.hide, #mybond_work_info.hide, #uts_education.hide, #academic_achievements.hide {
+#thales_work_info.hide, #mybond_work_info.hide, #uts_education.hide, #academic_achievements.hide, #research_capstone.hide {
     transform: translateX(-100%);
     visibility: hidden;
     /* optional */
@@ -327,7 +327,7 @@ footer p {
     opacity: 0;
 }
 
-#thales_work_info, #mybond_work_info, #uts_education, #academic_achievements {
+#thales_work_info, #mybond_work_info, #uts_education, #academic_achievements, #research_capstone {
     transition: all 3s;
 }
 
