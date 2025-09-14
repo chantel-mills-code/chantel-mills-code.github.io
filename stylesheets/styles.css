@@ -1,4 +1,4 @@
-/* Reset and base styles */
+/* --- Reset and base styles --- */
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ body {
     padding: 0 20px;
 }
 
-/* Header styles */
+/* --- Header styles --- */
 header {
     background-color: #022272;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -63,16 +63,6 @@ nav {
     color: #a1dbf1;
 }
 
-/* Main content */
-main {
-    /* margin-top: 80px; */ /* Account for fixed header */
-}
-
-/* Smooth scrolling for anchor links */
-section, footer, .skills {
-    /* scroll-margin-top: 80px; */ /* Offset for fixed header */
-}
-
 /* Intro section */
 #intro {
     background: linear-gradient(135deg, #A1dbf1 0%, #797dcc 100%);
@@ -102,10 +92,8 @@ section, footer, .skills {
     opacity: 0.9;
 }
 
-/* academic */
+/* --- Academic Experience Styles --- */
 #academic-info {
-    /* color: black; */
-    /* padding: 4rem 0; */
     text-align: center;
 }
 
@@ -115,7 +103,7 @@ section, footer, .skills {
     opacity: 0.9;
 }
 
-/* projects section */
+/* --- Projects Styles --- */
 
 .project-button-links {
     background-color: #748dcc;
@@ -131,7 +119,7 @@ section, footer, .skills {
     background-color: #3f5ba2;
 }
 
-/* About section */
+/* --- About section Styles --- */
 #about {
     padding: 4rem 0;
     background-color: #f8f9fa;
@@ -184,8 +172,6 @@ section, footer, .skills {
 }
 
 .skills-grid-centered {
-    /* display: grid; */
-    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
     gap: 2rem;
     margin-top: 2rem;
     display: flex;
