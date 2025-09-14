@@ -1,201 +1,166 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chantel Mills | Software Engineer</title>
         <link rel="stylesheet" href="stylesheets/styles.css">
+
         <script>
-            window.addEventListener('load',function(){
-                document.getElementById('uts_education').classList.toggle('hide') // removes hide
-                document.getElementById('academic_achievements').classList.toggle('hide') // removes hide
-            })
+            document.addEventListener('DOMContentLoaded', () => {
+                const paragraphs = document.querySelectorAll('.fade-in');
+                let delay = 0;
+
+                paragraphs.forEach((paragraph, index) => {
+                    setTimeout(() => {
+                    paragraph.classList.add('visible');
+                    }, delay);
+                    delay += 500; // Adjust delay time (in milliseconds) between paragraphs
+                });
+            });
         </script>
+
     </head>
-    <body class="academic_exp">
-        <div class="header">
-            <p style="color: white;">Chantel Mills | Portfolio</p>
-            <ul class="header_links">
-                <li>
-                    <a href="index.html">About Me</a>
-                </li>
-                <span>|</span>
-                <li>
-                    <a href="academic_experience.html">Academic Experience / Achievements</a>
-                </li>
-                <span>|</span>
-                <li>
-                    <a href="professional_experience.html">Professional Experience</a>
-                </li>
-                <span>|</span>
-                <li>
-                    <a href="projects.html">Projects / Research</a>
-                </li>
-                <span>|</span>
-                <li>
-                    <a href="skills.html">Transferable Skills</a>
-                </li>
-            </ul>
-        </div>
-        <div class="page_content">
-            <h1>Academic Experience</h1>
-            <div id="uts_education" class="hide">
-                <div class="education_list_item">
-                    <div>
-                        <p>
-                            <strong>Bachelor of Engineering (Honours), Software Engineering<br>
-                            Diploma of Professional Engineering Practice</strong>
-                        </p>
-                        <p>
-                            University of Technology Sydney
-                        </p>
-                    </div>
-                    <div class="education_date">
-                        <p>March 2019 - November 2025</p>
-                    </div>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>Chantel Mills</h1>
                 </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html">About me</a>
+                    </li>
+                    <li>
+                        <a href="academic_experience.html">Academic Experience / Achievements</a>
+                    </li>
+                    <li>
+                        <a href="professional_experience.html">Professional Experience</a>
+                    </li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="skills.html">Transferable Skills</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="academic-container">
+                <section id="intro">
+                    <div class="intro-content">
+                        <h2 class="fade-in">Academic Experience</h1>
+                    </div>
+                </section>
+
+                <section id="academic-info">
+                    <div class="container fade-in" style="margin-bottom: 20px; margin-top: 20px; font-size: 1.1rem;">
+                        <p style="font-weight: bold; font-size: 1.2rem;">Bachelor of Engineering (Honours), Software Engineering</p>
+                        <p style="font-weight: bold; font-size: 1.2rem;">Diploma of Professional Engineering Practice</p>
+                        <p>University of Technology Sydney</p>
+                        <br>
+                        <p>
+                            <span style="text-decoration: underline;">Achievements</span> <br>
+                            Weighted Average Mark 82.46 (Distinction Average) <br>
+                            Grade Point Average: 6.25 (scale 1-7, 7 being the highest)
+                        </p>
+                    </div>
+                </section>
+
+                <section id="intro">
+                    <div class="intro-content">
+                        <h2 class="fade-in">Academic Achievements</h1>
+                    </div>
+                </section>
+
+                <section style="margin-bottom: 40px; margin-top: 20px;">
+                    <div class="container">
+                        <div class="skills" id="skills">
+                            <div class="skills-grid skills-summarised-list fade-in">
+                                <div class="skill-item">
+                                    <h4>Thales Senior Cooperative Scholarship</h4>
+                                    <p>University of Technology Sydney </p>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4>Dean’s List Engineering</h4>
+                                    <p>University of Technology Sydney </p>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4>Lucy Mentoring Program</h4>
+                                    <p>University of Technology Sydney </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="intro">
+                    <div class="intro-content">
+                        <h2 class="fade-in">LinkedIn Learning Certifications</h1>
+                    </div>
+                </section>
+
+                <section style="margin-bottom: 40px; margin-top: 20px;">
+                    <div class="container">
+                        <div class="skills" id="skills">
+                            <div class="skills-grid skills-summarised-list fade-in">
+                                <div class="skill-item">
+                                    <h4>BootStrap 5 Essential Training</h4>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4>Agile Foundations</h4>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4>Learning Python</h4>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4>Introduction to CSS</h4>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4>HTML Essential Training</h4>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4>Learning SQL Programming</h4>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4>Programming Foundations: Fundamentals</h4>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4>Intro to Web Design & Development</h4>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4>CSS Essential Training</h4>
+                                </div>
+
+                                <div class="skill-item">
+                                    <h4>Learning C#</h4>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+
             </div>
-            <h1 style="margin-top: 20px;">Academic Achievements</h1>
-            <div id="academic_achievements" class="hide">
-                <div class="education_list_item">
-                    <div>
-                        <p>
-                            <strong>Thales Senior Cooperative Scholarship</strong>
-                        </p>
-                        <p>
-                            University of Technology Sydney
-                        </p>
-                    </div>
-                    <div class="education_date">
-                        <p>2024</p>
-                    </div>
-                </div>
-                <div class="education_list_item">
-                    <div>
-                        <p>
-                            <strong>Deans List Engineering</strong>
-                        </p>
-                        <p>
-                            University of Technology Sydney<br>
-                            Awarded for outstanding academic achievement
-                        </p>
-                    </div>
-                    <div class="education_date">
-                        <p>2024</p>
-                    </div>
-                </div>
-                <div class="education_list_item">
-                    <div>
-                        <p>
-                            <strong>Lucy Mentoring Program</strong>
-                        </p>
-                        <p>
-                            University of Technology Sydney<br>
-                        </p>
-                    </div>
-                    <div class="education_date">
-                        <p>March 2020 - September 2020</p>
-                    </div>
-                </div>
-                <div class="education_list_item" style="border: none;">
-                    <div>
-                        <p>
-                            <strong>LinkedIn Learning</strong>
-                        </p>
-                    </div>
-                    <div class="education_date">
-                        <!-- <p>Ongoing</p> -->
-                    </div>
-                </div>
-                <div class="education_list_item">
-                    <div class="linkedin_courses_list">
-                        <div class="course_name">
-                            <!-- Course -->
-                            <p>BootStrap 5 essential Training</p>
-                        </div>
-                        <div>
-                            <!-- Date Complete -->
-                            <p>2021</p>
-                        </div>
-
-                        <div class="course_name" style="padding-left: 20px;">
-                            <!-- Course -->
-                            <p>Agile Foundations</p>
-                        </div>
-                        <div style="text-align: right; padding-right: 20px;">
-                            <!-- Date Complete -->
-                            <p>2021</p>
-                        </div>
-
-                        <div class="course_name" >
-                            <!-- Course -->
-                            <p>Learning Python</p>
-                        </div>
-                        <div>
-                            <!-- Date Complete -->
-                            <p>2021</p>
-                        </div>
-
-                        <div class="course_name" style="padding-left: 20px;">
-                            <!-- Course -->
-                            <p>Introduction to CSS</p>
-                        </div>
-                        <div style="text-align: right; padding-right: 20px;">
-                            <!-- Date Complete -->
-                            <p>2021</p>
-                        </div>
-
-                        <div class="course_name" >
-                            <!-- Course -->
-                            <p>HTML Essential Training</p>
-                        </div>
-                        <div>
-                            <!-- Date Complete -->
-                            <p>2021</p>
-                        </div>
-
-                        <div class="course_name" style="padding-left: 20px;">
-                            <!-- Course -->
-                            <p>Learning SQL Programming</p>
-                        </div>
-                        <div style="text-align: right; padding-right: 20px;">
-                            <!-- Date Complete -->
-                            <p>2021</p>
-                        </div>
-
-                        <div class="course_name" >
-                            <!-- Course -->
-                            <p>Programming Foundations: Fundamentals</p>
-                        </div>
-                        <div>
-                            <!-- Date Complete -->
-                            <p>2021</p>
-                        </div>
-
-                        <div class="course_name" style="padding-left: 20px;">
-                            <!-- Course -->
-                            <p>Intro to Web Design & Development</p>
-                        </div>
-                        <div style="text-align: right; padding-right: 20px;">
-                            <!-- Date Complete -->
-                            <p>2025</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
+        </main>
         <footer>
             <p>© 2025 by Chantel Mills</p>
 
-            <!-- Add or remove any networks. -->
             <ul class="socials">
                 <li>
                     <a href="https://www.linkedin.com/in/chantel-mills/" target="_blank"><img src="images/icon-logo-linkedin.png" alt="My LinkedIn"></a>
-                    <!-- <a href="#" target="_blank"><img src="images/github-mark/github-mark.png" alt="My GitHub"></a> -->
                 </li>
             </ul>
-            <!-- End content edits here. -->
+
         </footer>
     </body>
 </html>

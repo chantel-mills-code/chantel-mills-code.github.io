@@ -1,133 +1,154 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chantel Mills | Software Engineer</title>
         <link rel="stylesheet" href="stylesheets/styles.css">
+
         <script>
-            window.addEventListener('load',function(){
-                document.getElementById('thales_work_info').classList.toggle('hide') // removes hide
-                document.getElementById('mybond_work_info').classList.toggle('hide') // removes hide
-            })
+            document.addEventListener('DOMContentLoaded', () => {
+                const paragraphs = document.querySelectorAll('.fade-in');
+                let delay = 0;
+
+                paragraphs.forEach((paragraph, index) => {
+                    setTimeout(() => {
+                    paragraph.classList.add('visible');
+                    }, delay);
+                    delay += 500; // Adjust delay time (in milliseconds) between paragraphs
+                });
+            });
         </script>
+
     </head>
-    <body class="professional_exp">
-        <div class="header">
-            <p style="color: white;">Chantel Mills | Portfolio</p>
-            <ul class="header_links">
-                <li>
-                    <a href="index.html">About Me</a>
-                </li>
-                <span>|</span>
-                <li>
-                    <a href="academic_experience.html">Academic Experience / Achievements</a>
-                </li>
-                <span>|</span>
-                <li>
-                    <a href="professional_experience.html">Professional Experience</a>
-                </li>
-                <span>|</span>
-                <li>
-                    <a href="projects.html">Projects / Research</a>
-                </li>
-                <span>|</span>
-                <li>
-                    <a href="skills.html">Transferable Skills</a>
-                </li>
-            </ul>
-        </div>
-        <div class="page_content">
-            <h1>Professional Experience</h1>
-            <!-- <h5>Click on the company names below for more information.</h5> -->
-            <div class="experience_outline">
-                <div class="company_list_item">
-                    <!-- <div class=""> -->
-                        <input type="button" id="thales_title" value="Thales - Software Engineering Intern" style="font-weight: bold;">
-                    <!-- </div> -->
-                    <div>
-                        <p><b>July 2024 - January 2025</b></p>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>Chantel Mills</h1>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html">About me</a>
+                    </li>
+                    <li>
+                        <a href="academic_experience.html">Academic Experience / Achievements</a>
+                    </li>
+                    <li>
+                        <a href="professional_experience.html">Professional Experience</a>
+                    </li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="skills.html">Transferable Skills</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="academic-container">
+                <section id="intro">
+                    <div class="intro-content">
+                        <h2 class="fade-in">Professional Experience</h1>
                     </div>
-                </div>
-                <div class="work_info hide" id="thales_work_info">
-                    <ul>
-                        <li>
-                            Collaborated with Senior Software Engineer in the development of a project’s frontend for the UX and UI, <br>utilised draw.io to develop initial wireframes to meet project requirements within an Agile environment
-                        </li>
-                        <li>
-                            Undertook unit testing for JavaScript and C++ Applications
-                        </li>
-                        <li>
-                            Automated GitLab CI/CD Pipelines for unit testing
-                        </li>
-                        <li>
-                            Managed and created documentation for unit testing frameworks and recommendations
-                        </li>
-                        <li>
-                            Conducted research for unit testing frameworks, Test-driven development and code coverage in C++, <br>JavaScript and Python applications
-                        </li>
-                        <li>
-                            Delivered Presentations
-                        </li>
-                        <li>
-                            Developed a UDP network using Node.js
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="experience_outline">
-                <div class="company_list_item">
-                    <!-- <div class=""> -->
-                        <input type="button" id="mybond_title" value="MyBond - Junior Software Engineer" style="font-weight: bold;">
-                    <!-- </div> -->
-                    <div>
-                        <p><b>November 2021 - July 2024</b></p>
+                </section>
+
+                <section id="academic-info">
+                    <div class="container fade-in" style="margin-bottom: 20px; margin-top: 20px;">
+
+                        <div class="skills" id="skills">
+                            <div class="skills-grid skills-summarised-list fade-in">
+                                <div class="skill-item">
+                                    <h4 style="font-size: 1.2rem;">Thales - Software Engineering Intern</h4>
+                                    <p style="font-size: 1.1rem;">6 month internship</p>
+                                </div>
+
+                                <div class="skill-item" style="text-align: left; font-size: 1.1rem;">
+                                    <ul>
+                                        <li>
+                                            Collaborated with Senior Software Engineer in the development of a project’s frontend for the UX and UI, utilised draw.io to develop initial wireframes to meet project requirements within an Agile environment
+                                        </li>
+                                        <li>
+                                            Undertook unit testing for JavaScript and C++ Applications
+                                        </li>
+                                        <li>
+                                            Automated GitLab CI/CD Pipelines for unit testing
+                                        </li>
+                                        <li>
+                                            Managed and created documentation for unit testing frameworks and recommendations
+                                        </li>
+                                        <li>
+                                            Conducted research for unit testing frameworks, Test-driven development and code coverage in C++, JavaScript and Python applications
+                                        </li>
+                                        <li>
+                                            Delivered Presentations
+                                        </li>
+                                        <li>
+                                            Developed a UDP network using Node.js
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills" id="skills">
+                            <div class="skills-grid skills-summarised-list fade-in">
+                                <div class="skill-item">
+                                    <h4 style="font-size: 1.2rem;">MyBond - Junior Software Engineer </h4>
+                                    <p style="font-size: 1.1rem;">2.5 years working experience + 6 month internship</p>
+                                </div>
+
+                                <div class="skill-item" style="text-align: left; font-size: 1.1rem;">
+                                    <ul>
+                                        <li>
+                                            Whilst working within an Agile environment I was involved in every stage of the Software Development Lifecycle (SDLC)
+                                        </li>
+                                        <li>
+                                            Enhanced current reports and automated processes which increased productivity by 20% within the business
+                                        </li>
+                                        <li>
+                                            Proficient coding techniques
+                                        </li>
+                                        <li>
+                                            Internationalisation of Website
+                                        </li>
+                                        <li>
+                                            Automated regression testing using WATIR
+                                        </li>
+                                        <li>
+                                            Implementation of the Zai API
+                                        </li>
+                                        <li>
+                                            Utilising Ruby on Rails to enhance and modify website and database design
+                                        </li>
+                                        <li>
+                                            Assisted with the development of the UI
+                                        </li>
+                                        <li>
+                                            Collaborated with lead designer to improve UX
+                                        </li>
+                                        <li>
+                                            Web scraping utilising Python
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="work_info hide" id="mybond_work_info">
-                    <ul>
-                        <li>
-                            Whilst working within an Agile environment I have been involved in every stage of the Software Development <br>Lifecycle (SDLC)
-                        </li>
-                        <li>
-                            Enhanced current reports and automated processes which have increased productivity by 20% within the <br>business
-                        </li>
-                        <li>
-                            Proficient coding techniques
-                        </li>
-                        <li>
-                            Internationalisation of Website
-                        </li>
-                        <li>
-                            Automated regression testing using WATIR
-                        </li>
-                        <li>
-                            Implementation of the Zai API
-                        </li>
-                        <li>
-                            Utilising Ruby on Rails to enhance and modify database design
-                        </li>
-                        <li>
-                            Assisted with the development of the UI
-                        </li>
-                        <li>
-                            Collaborated with lead designer to improve UX
-                        </li>
-                    </ul>
-                </div>
+                </section>
+
             </div>
-        </div>
+        </main>
         <footer>
             <p>© 2025 by Chantel Mills</p>
 
-            <!-- Add or remove any networks. -->
             <ul class="socials">
                 <li>
                     <a href="https://www.linkedin.com/in/chantel-mills/" target="_blank"><img src="images/icon-logo-linkedin.png" alt="My LinkedIn"></a>
-                    <!-- <a href="#" target="_blank"><img src="images/github-mark/github-mark.png" alt="My GitHub"></a> -->
                 </li>
             </ul>
-            <!-- End content edits here. -->
+
         </footer>
     </body>
 </html>

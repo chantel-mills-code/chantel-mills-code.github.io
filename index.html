@@ -2,92 +2,132 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chantel Mills | Software Engineer</title>
         <link rel="stylesheet" href="stylesheets/styles.css">
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const paragraphs = document.querySelectorAll('.fade-in');
+                let delay = 0;
+
+                paragraphs.forEach((paragraph, index) => {
+                    setTimeout(() => {
+                    paragraph.classList.add('visible');
+                    }, delay);
+                    delay += 500; // Adjust delay time (in milliseconds) between paragraphs
+                });
+            });
+        </script>
+
     </head>
-    <body class="home">
-        <div class="header">
-            <p style="color: white;">Chantel Mills | Portfolio</p>
-            <ul class="header_links">
-                <li>
-                    <a href="index.html">About Me</a>
-                </li>
-                <span>|</span>
-                <li>
-                    <a href="academic_experience.html">Academic Experience / Achievements</a>
-                </li>
-                <span>|</span>
-                <li>
-                    <a href="professional_experience.html">Professional Experience</a>
-                </li>
-                <span>|</span>
-                <li>
-                    <a href="projects.html">Projects / Research</a>
-                </li>
-                <span>|</span>
-                <li>
-                    <a href="skills.html">Transferable Skills</a>
-                </li>
-            </ul>
-        </div>
-        <div class="landing_page_content">
-            <div class="main_content">
-                <div class="left center">
-                    <p style="font-size: 70px; font-weight: bold;">Chantel Mills</p>
-                    <p style="font-size: 40px;">Software Engineer</p>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>Chantel Mills</h1>
                 </div>
-                <div class="right">
-                    <br><br><br>
-                    <p>
-                        Hi, I'm Chantel. Thank you for taking the time to look at my portfolio.
-                    </p>
-                    <p>
-                        I’m a highly driven final year software engineering student wanting to improve and gain new skills. I relish the opportunity to contribute to your company by applying theoretical knowledge and technical skills in a practical role. I have a strong work ethic and an eagerness to learn.
-                    </p>
-                    <br>
-                    <a href="documents/Chantel_Mills_Resume_ePorfolio.pdf" target="_blank" class="btn">
-                        Download Resume
-                    </a>
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html">About me</a>
+                    </li>
+                    <li>
+                        <a href="academic_experience.html">Academic Experience / Achievements</a>
+                    </li>
+                    <li>
+                        <a href="professional_experience.html">Professional Experience</a>
+                    </li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="skills.html">Transferable Skills</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section id="intro">
+                <div class="intro-content">
+                    <h1 class="fade-in">Chantel Mills</h1>
+                    <h2 class="fade-in">Software Engineer</h2>
+                    <div class="intro-summary fade-in">
+                        <p>
+                            Thank you for taking the time to look at my portfolio.
+                        </p>
+                        <p>
+                            I’m a highly driven final year software engineering student wanting to improve and gain new skills. I relish the opportunity to contribute to your company by applying theoretical knowledge and technical skills in a practical role. I have a strong work ethic and an eagerness to learn.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="container">
+                    <!-- <h2>Skills</h2> -->
+                    <!-- <p>Hello! I'm a dedicated professional with a passion for technology and innovation. I enjoy solving complex problems and creating meaningful digital experiences.</p> -->
+                    
+                    <div class="skills" id="skills">
+                        <h3 class="fade-in">My Skills</h3>
+
+                        <div class="skills-grid-centered skills-summarised-list fade-in">
+                            <!-- Version 1 -->
+                            <div class="skill-item-centered">
+                                <h4>Web Development</h4>
+                                <p>Ruby on Rails, HTML, JavaScript, CSS, Angular, React, Tailwind, Node.js, TypeScript</p>
+                            </div>
+                            <div class="skill-item-centered">
+                                <h4>Object-Oriented Programming (OOP) & Backend Development</h4>
+                                <p>Java, C++, C#, Python, SQL, Node.js, utilising APIs</p>
+                            </div>
+                            <div class="skill-item-centered">
+                                <h4>Version Control & Collaboration</h4>
+                                <p>Git, GitHub, BitBucket, GitLab, Jira, Confluence, Trello</p>
+                            </div>
+                            <div class="skill-item-centered">
+                                <h4>Other Tools/Software</h4>
+                                <p>Visual Studio Code, Windows, Macintosh, Microsoft 365, Google Workspace</p>
+                            </div>
+                            <div class="skill-item-centered">
+                                <h4>Testing</h4>
+                                <p>Unit Testing for Web Applications, Unit Testing for C++ Applications</p>
+                            </div>
+                            <div class="skill-item-centered">
+                                <h4>Soft Skills</h4>
+                                <p>Written Communication, Leadership, Problem Solving, Teamwork, Organisation, Verbal Communication</p>
+                            </div>
+                            <div class="skill-item-centered">
+                                <h4>Other</h4>
+                                <p>Unity, Godot, Solidworks (CAD), Arduino</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- <footer id="contact">
+            <div class="container">
+                <p>&copy; 2025 Chantel Mills.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/chantel-mills/" target="_blank"><img src="images/icon-logo-linkedin.png" alt="My LinkedIn"></a>
                 </div>
             </div>
-            <div class="skills">
-                <p>Technical and Transferable Skills</p>
-                <div>
-                    <ul class="skill_list">
-                        <li>Ruby on Rails</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Angular</li>
-                        <li>C++</li>
-                        <li>GitHub & GitLab</li>
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>React JS</li>
-                        <li>Java</li>
-                        <li>Unity</li>
-                        <li>Jira & Confluence & BitBucket</li>
-                        <li>Written Communication</li>
-                        <li>Leadership</li>
-                        <li>Problem Solving</li>
-                        <li>Teamwork</li>
-                        <li>Organisation</li>
-                        <li>Verbal Communication</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        </footer> -->
+
         <footer>
             <p>© 2025 by Chantel Mills</p>
 
-            <!-- Add or remove any networks. -->
             <ul class="socials">
                 <li>
                     <a href="https://www.linkedin.com/in/chantel-mills/" target="_blank"><img src="images/icon-logo-linkedin.png" alt="My LinkedIn"></a>
-                    <!-- <a href="#" target="_blank"><img src="images/github-mark/github-mark.png" alt="My GitHub"></a> -->
                 </li>
             </ul>
-            <!-- End content edits here. -->
+
         </footer>
     </body>
 </html>
