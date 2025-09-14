@@ -1,0 +1,414 @@
+/* 
+    Colour Palette (https://www.canva.com/colors/color-palettes/cool-cream-strawberry/)
+    
+    Red         #e7625f    
+    Rose Red    #c85250    
+    Rose Quartz #f7bec0     
+    Ivory       #e9eae0     
+
+    https://www.canva.com/colors/color-palettes/floating-seaside/
+    Tiffany Blue #71D5E4 
+    Blue Green   #00B6BC  |  Blue Grotto #189AB4
+    Aquamarine   #A1DBF1
+    Baby Blue    #E4F4F3
+*/
+
+/*-----------------------------
+        GLOBAL STYLES
+-----------------------------*/
+/* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #E4F4F3;
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.btn {
+    background: #A1DBF1;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn:hover {
+    background: #189AB4;
+    color: white;
+}
+
+/*-----------------------------
+        Landing Page
+-----------------------------*/
+
+/* -------  Header ------- */
+
+.header {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #022272;
+    border-bottom: #022272 solid 2px;
+    /* #189AB4 */
+}
+
+.header_links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.header_links li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.header_links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header_links li a:hover {
+    color: #A1DBF1;
+}
+
+.header_links span {
+    margin-left: 10px;
+    color: #A1DBF1;
+}
+
+/* ------- Home  ------- */
+
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+.home .landing_page_content {
+    flex: 1 0 auto;
+}
+
+.main_content {
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 50%;
+    padding: 20px 20px;
+    background-color: #A1DBF1;
+}
+
+.center {
+    line-height: 60%;
+    /* height: 200px; */
+    /* border: 3px solid green; */
+    text-align: center;
+  }
+
+.center p {
+    line-height: 60%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.right {
+    width: 50%;
+    padding: 20px 20px;
+    background-color: white;
+}
+
+/* -----  Skills ----- */
+
+.skills {
+    background-color: white;
+    border-top: #189AB4 solid 2px;
+    height: 40%;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.skills p {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.skills .skill_list {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content: center;
+    padding-left: 0;
+    padding: 0 10px;
+}
+
+.skills .skill_list li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+    font-size: 22px;
+}
+
+/* -----  projects ----- */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects .page_content {
+    flex: 1 0 auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.projects h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #189AB4;
+}
+
+.projects .project_list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 80%; */
+    margin: 0 auto;
+}
+
+.project_list .project_item {
+    /* border: blue solid 1px; */
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.project_item img {
+    width: 350px;
+}
+
+.project_item p {
+    font-size: 16px;
+}
+
+/* ----- academic exp ----- */
+
+.academic_exp {
+    display: flex;
+    flex-direction: column;
+}
+
+.academic_exp .page_content {
+    flex: 1 0 auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.academic_exp h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #189AB4;
+}
+
+.academic_exp .page_content p {
+    /* font-size: 20px; */
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.academic_exp .page_content .education_list_item {
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: #e3e3e3 solid 1px; */
+}
+
+.education_list_item .education_date {
+    margin-right: 20px;
+}
+
+.linkedin_courses_list {
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: auto auto auto auto; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkedin_courses_list .course_name {
+    width: 40%;
+}
+
+/* ----- professional_exp ----- */
+
+.professional_exp {
+    display: flex;
+    flex-direction: column;
+}
+
+.professional_exp .page_content {
+    flex: 1 0 auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.professional_exp h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #189AB4;
+}
+
+/* .experience_outline {
+    border-bottom: #e3e3e3 1px solid;
+} */
+
+.professional_exp .page_content .company_list_item {
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: #e3e3e3 solid 1px; */
+    /* margin-bottom: 0; */
+}
+
+.work_info {
+    margin-bottom: 20px;
+}
+
+.work_info ul {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.company_list_item input {
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+/* .company_list_item input:hover {
+    cursor: pointer;
+} */
+
+#thales_work_info.hide, #mybond_work_info.hide, #uts_education.hide, #academic_achievements.hide, #research_capstone.hide {
+    transform: translateX(-100%);
+    visibility: hidden;
+    /* optional */
+    height: 0;
+    padding: 0;
+    margin: 0;
+    /* also optional */
+    opacity: 0;
+}
+
+#thales_work_info, #mybond_work_info, #uts_education, #academic_achievements, #research_capstone {
+    transition: all 3s;
+}
+
+/* skills */
+
+.transferable_skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.transferable_skills .page_content {
+    flex: 1 0 auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.transferable_skills h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #189AB4;
+}
+
+.skill-item {
+    display: flow-root;
+    margin: 0;
+}
+
+.skill-item h3 {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+
+#skill_1_communication.hide, #skill_2_leadership.hide, #skill_3_leadership.hide {
+    transform: translateX(-100%);
+    visibility: hidden;
+    /* optional */
+    /* height: 0; */
+    /* padding: 0; */
+    /* margin: 0; */
+    /* also optional */
+    opacity: 0;
+}
+#skill_1_communication, #skill_2_leadership, #skill_3_leadership {
+    transition: all 4s;
+}
+
+/*----------------------------- 
+        FOOTER 
+-----------------------------*/
+footer {
+    background: #E4F4F3;
+    color: #189AB4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* footer a {
+    color: #bcaa96;
+}
+
+footer a:hover {
+    color: #3c8453;
+} */
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.socials img {
+    width: 32px;
+}
+
+.socials img:hover {
+    opacity: 0.5;
+}

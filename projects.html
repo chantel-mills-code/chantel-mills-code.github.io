@@ -1,87 +1,121 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chantel Mills | Software Engineer</title>
         <link rel="stylesheet" href="stylesheets/styles.css">
+
         <script>
-            window.addEventListener('load',function(){
-                // remove all the hide classes on page load
-                document.getElementById('research_capstone').classList.toggle('hide');
-            })
+            document.addEventListener('DOMContentLoaded', () => {
+                const paragraphs = document.querySelectorAll('.fade-in');
+                let delay = 0;
+
+                paragraphs.forEach((paragraph, index) => {
+                    setTimeout(() => {
+                    paragraph.classList.add('visible');
+                    }, delay);
+                    delay += 500; // Adjust delay time (in milliseconds) between paragraphs
+                });
+            });
         </script>
     </head>
-    <body class="projects">
-        <div class="header">
-            <p style="color: white;">Chantel Mills | Portfolio</p>
-            <ul class="header_links">
-                <li>
-                    <a href="index.html">About Me</a>
-                </li>
-                <span>|</span>
-                <li>
-                    <a href="academic_experience.html">Academic Experience / Achievements</a>
-                </li>
-                <span>|</span>
-                <li>
-                    <a href="professional_experience.html">Professional Experience</a>
-                </li>
-                <span>|</span>
-                <li>
-                    <a href="projects.html">Projects / Research</a>
-                </li>
-                <span>|</span>
-                <li>
-                    <a href="skills.html">Transferable Skills</a>
-                </li>
-            </ul>
-        </div>
-        <div class="page_content">
-            <h1>Projects</h1>
-            <div class="project_list">
-                <div class="project_item">
-                    <div>
-                        <img src="images/mushys_adventure_game.png" alt="Image of Mushy's Adventure: A platformer game">
-                    </div>
-                    <div>
-                        <h4>Mushy's Adventure: A platformer game</h4>
-                        <p>This is a short platformer game developed for my Engineering Capstone project. I made two versions of this game, one with customisation and one without customisation.</p>
-                        <a target="_blank" href="https://chantelmcode.itch.io/mushys-adventure?secret=2H1xDQysTeSejAeEgV626RontBM" class="btn">No customisation version</a>
-                        <a target="_blank" href="https://chantelmcode.itch.io/mushys-adventure-v2?secret=D5YIN1yv1kUhRG75Zl7QYSrtCk" class="btn">Customisation version</a>
-                    </div>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>Chantel Mills</h1>
                 </div>
-                <div class="project_item">
-                    <div>
-                        <img src="images/froggys_excapade_game.png" alt="Image of Froggy's Escapade: A maze game">
-                    </div>
-                    <div>
-                        <h4>Froggy's Escapade: A maze game</h4>
-                        <p>This is a short maze game developed for my Engineering Capstone project. I made two versions of this game, one with customisation and one without customisation.</p>
-                        <a target="_blank" href="https://chantelmcode.itch.io/froggys-escapade?secret=zJQC0pXoZv9P6CQF5ATyHsIMD8" class="btn">No customisation version</a>
-                        <a target="_blank" href="https://chantelmcode.itch.io/froggys-escapade-2?secret=4FhRb8tpTPQUoVIqAbCnCgEMc" class="btn">Customisation version</a>
-                    </div>
-                </div>
-            </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html">About me</a>
+                    </li>
+                    <li>
+                        <a href="academic_experience.html">Academic Experience / Achievements</a>
+                    </li>
+                    <li>
+                        <a href="professional_experience.html">Professional Experience</a>
+                    </li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="skills.html">Transferable Skills</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-            <h1>Research</h1>
-            <div id="research_capstone" class="hide">
-                <h2>Engineering Capstone Project</h2>
-                <p>The background for the capstone project is to explore the behaviour of consumers whilst interacting with games. It's purpose is to dive deeper into the topic of consumer behaviour in games by exploring the impact of customisation and the effect it has on engagement in video games.</p>
-            </div>
+        <main>
+            <div class="academic-container">
+                <section id="intro">
+                    <div class="intro-content">
+                        <h2 class="fade-in">Projects</h1>
+                    </div>
+                </section>
 
-        </div>
+                <section id="academic-info">
+                    <div class="container fade-in" style="margin-bottom: 20px; margin-top: 20px;">
+
+                        <div class="skills" id="skills">
+                            <div class="skills-grid skills-summarised-list fade-in">
+                                <div class="skill-item">
+                                    <div>
+                                        <img style="width: 350px;" src="images/mushys_adventure_game.png" alt="Image of Mushy's Adventure: A platformer game">
+                                    </div>
+                                    <h4>Mushy's Adventure</h4>
+                                    <p>
+                                        This is a short platformer game developed for my Engineering Capstone project. I made two versions of this game, one with customisation and one without customisation.
+                                    </p>
+                                    <br>
+
+                                    <p style="margin-bottom: 20px;">
+                                        <a class="project-button-links" target="_blank" href="https://chantelmcode.itch.io/mushys-adventure?secret=2H1xDQysTeSejAeEgV626RontBM" class="btn">No customisation version</a>
+                                    </p>
+                                    <p>
+                                        <a class="project-button-links" target="_blank" href="https://chantelmcode.itch.io/mushys-adventure-v2?secret=D5YIN1yv1kUhRG75Zl7QYSrtCk" class="btn">Customisation version</a>
+                                    </p>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div>
+                                        <img style="width: 350px;" src="images/froggys_excapade_game.png" alt="Image of Froggy's Escapade: A maze game">
+                                    </div>
+                                    <h4>Froggy's Escapade</h4>
+                                    <p>This is a short maze game developed for my Engineering Capstone project. I made two versions of this game, one with customisation and one without customisation.</p>
+                                    <br>
+                                    <p style="margin-bottom: 20px;">
+                                        <a class="project-button-links" target="_blank" href="https://chantelmcode.itch.io/froggys-escapade?secret=zJQC0pXoZv9P6CQF5ATyHsIMD8" class="btn">No customisation version</a>
+                                    </p>
+                                    <p>
+                                        <a class="project-button-links" target="_blank" href="https://chantelmcode.itch.io/froggys-escapade-2?secret=4FhRb8tpTPQUoVIqAbCnCgEMc" class="btn">Customisation version</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="skills-grid skills-summarised-list fade-in">
+                                <div class="skill-item">
+                                    <h4>Engineering Capstone Research Project</h4>
+                                    <p>
+                                        The background for the capstone project is to explore the behaviour of consumers whilst interacting with games. It's purpose is to dive deeper into the topic of consumer behaviour in games by exploring the impact of customisation and the effect it has on engagement in video games.
+                                    </p>
+                                    <p>Awarded High Distinction</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
         <footer>
             <p>© 2025 by Chantel Mills</p>
 
-            <!-- Add or remove any networks. -->
             <ul class="socials">
                 <li>
                     <a href="https://www.linkedin.com/in/chantel-mills/" target="_blank"><img src="images/icon-logo-linkedin.png" alt="My LinkedIn"></a>
-                    <!-- <a href="#" target="_blank"><img src="images/github-mark/github-mark.png" alt="My GitHub"></a> -->
                 </li>
             </ul>
-            <!-- End content edits here. -->
+
         </footer>
     </body>
 </html>
